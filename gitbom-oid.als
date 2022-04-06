@@ -1,3 +1,9 @@
+// Gitbom data model spec
+//
+// This model explicitly includes Oids, and objects reference each other via them.
+// It is a closer reflection of the real design but it's a bit harder to understand what's
+// going on.
+
 // Basic object id
 abstract sig Oid {}
 
@@ -49,4 +55,4 @@ fact {
 }
 
 
-run {} for 10
+run {} for 5
