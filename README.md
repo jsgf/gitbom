@@ -31,7 +31,10 @@ An example instance of this model:
 
 ## Spec with OIDs
 
-The [more detailed spec](gitbom-oid.als) explicitly includes OIDs. This is closer to the real system, but the OIDs add a lot of extra complexity.
+The [more detailed spec](gitbom-oid.als) explicitly includes OIDs. This is
+closer to the real system, but the OIDs add a lot of extra complexity.  However,
+once we start to consider how to handle constructing OIDs with multiple hash
+functions, we'll need the explicit representation.
 
 ![OID meta-model](images/model-oid.png)
 
