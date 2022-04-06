@@ -21,11 +21,11 @@ sig DerivedRef {
 }
 
 // A document representing a build step
+// A "GitBOM document" in  https://gitbom.dev/glossary/gitbom/#gitbom-document
 sig BomDoc {
 	// Inputs ("children") of this document. We can reference leaf artifacts
 	// inputs directly, but derived artifacts also reference their corresponding
 	// gitbom document.
-	// Source: https://gitbom.dev/glossary/gitbom/#gitbom-document
 	// Question: at least one input?
 	inputs: some LeafArtifact + DerivedRef
 }
